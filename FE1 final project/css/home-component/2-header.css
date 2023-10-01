@@ -1,0 +1,102 @@
+header {
+    background-color: #F0F4F9;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 24px;
+
+}
+
+.container .right-side {
+    display: flex;
+    align-items: center;
+}
+
+.container .right-side nav {
+    display: flex;
+    margin-right: 3rem;
+    gap: 1rem;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sign-up a {
+    background-color: #FDC800;
+    padding: 0 1rem;
+    height: 44px;
+    border: 0;
+    border-radius: 10px;
+    line-height: 44px;
+}
+
+.search {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    background-color: #fff;
+    border: solid 0.2px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-bars:hover~.right-side>nav {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    top: 12vh;
+    left: 0;
+    background-color: #ddd;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width:992px) {
+    .container .right-side nav {
+        display: none;
+    }
+
+    .brand h5 {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+        position: absolute;
+        left: 1rem;
+
+    }
+
+    img {
+        position: absolute;
+        left: 4rem;
+    }
+
+}

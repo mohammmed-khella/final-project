@@ -1,0 +1,69 @@
+.statistics {
+    background-color: #F0F4F9;
+}
+
+.statistics .container {
+    background: url(../crs/statistics/map.png) no-repeat center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.statistics .box {
+    text-align: center;
+}
+
+.statistics .box h5 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #002147;
+}
+
+.statistics .box h6 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #00B2B2;
+}
+
+@media (max-width:768px) {
+    .statistics .container {
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .statistics .box {
+        min-height: 300px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    .statistics img {
+        transform: translateX(-100%);
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .statistics .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        align-self: start;
+    }
+
+    .statistics .box {
+        text-align: center;
+        min-height: 300px;
+        position: relative;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 6rem;
+    }
+}

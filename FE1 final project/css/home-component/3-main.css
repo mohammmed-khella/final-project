@@ -1,0 +1,50 @@
+main {
+    background-color: #F0F4F9;
+    padding: 5rem 0;
+    height: 640px;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+main .container h3 {
+    margin-top: 5rem;
+    font-size: 30px;
+}
+
+main .container h2 {
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+main .container nav :nth-child(1) {
+    background-color: #FDC800;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+}
+
+main .container nav :nth-child(2) {
+    background-color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: 1 solid #BDBDBD;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+}
+
+@media (max-width:992px) {
+    main {
+        height: 920px;
+    }
+
+    main .container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        text-align: center;
+    }
+
+}

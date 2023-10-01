@@ -1,0 +1,30 @@
+.media {
+    background-color: #FDC800;
+    width: 100%;
+}
+
+.media .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.media .container .contact-adress {
+    display: flex;
+    gap: 2rem;
+    height: 48px;
+    align-items: center;
+}
+
+.media nav {
+    display: flex;
+    gap: 1rem;
+    height: 48px;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .media {
+        display: none;
+    }
+}

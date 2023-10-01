@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 5px;
+    padding: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0.25rem 0.5rem;
+}
+
+section {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+a:hover {
+    background-color: #FDC800;
+    transform: scale(1.2);
+    border-radius: 25px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}

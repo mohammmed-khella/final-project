@@ -1,0 +1,53 @@
+@import url(../css/home-component/0-global.css);
+@import url(../css/home-component/1-media.css);
+@import url(../css/home-component/2-header.css);
+
+@import url(../css/home-component/8-subsecribe.css);
+@import url(../css/home-component/9-footer.css);
+
+
+.course-details {
+    min-height: 700px;
+}
+
+.course-details h6 {
+    color: #FDC800;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.course-details h3 {
+    color: #002147;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.course-details .cards {
+    margin-bottom: 2rem;
+}
+
+.course-details h4 {
+    color: #002147;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.course-details p {
+    color: #212529;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: url(../crs/last-page/check-solid.svg);
+}
+
+li {
+    color: #212529;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,145 @@
+.subsecribe .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.subsecribe-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subsecribe-content h6 {
+    color: #FDC800;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.subsecribe-content h3 {
+    width: 400px;
+    color: #002147;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.subsecribe-content form input {
+    border: 0.1 #bdbdbd6b;
+    width: 570px;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    padding-right: 100px;
+}
+
+.subsecribe-content form {
+    position: relative;
+}
+
+.subsecribe-content form .fa-envelope {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.subsecribe-content form button {
+    padding: 0.8rem;
+    width: 160px;
+    background-color: #FDC800;
+    color: #002147;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width:576px) {
+
+
+    .subsecribe {
+        height: 1000px;
+        padding-bottom: 5rem;
+    }
+
+    .subsecribe .container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .subsecribe-content {
+        transform: translateY(120%);
+        padding-bottom: 5rem;
+    }
+
+    .subsecribe-content form input {
+        width: 50%;
+    }
+
+    .subsecribe-content form button {
+        position: static;
+        transform: translateY(50%);
+    }
+
+    .subsecribe-content form .fa-envelope {
+        transform: translateY(-32px);
+    }
+
+}
+
+@media(min-width:576px) and (max-width:992px) {
+    .subsecribe {
+        height: 1000px;
+        padding-bottom: 5rem;
+    }
+
+    .subsecribe .container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .subsecribe-content {
+        transform: translateY(120%);
+        padding-bottom: 5rem;
+    }
+
+    .subsecribe-content form input {
+        width: 80%;
+    }
+
+    .subsecribe-content form button {
+        position: static;
+        transform: translateY(50%);
+    }
+
+    .subsecribe-content form .fa-envelope {
+        transform: translateY(-32px);
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .subsecribe-content form input {
+        width: 80%;
+    }
+
+    .subsecribe-content form button {
+        position: static;
+        transform: translateY(50%);
+    }
+
+    .subsecribe-content form .fa-envelope {
+        transform: translateY(-32px);
+    }
+
+
+}

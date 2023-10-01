@@ -1,0 +1,188 @@
+.feedback .container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-image {
+    position: relative;
+    height: 404px;
+}
+
+.feedback-image .corner-image {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+}
+
+.feedback-image .image-description {
+    background-color: #FFFF;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 2rem;
+    position: absolute;
+    left: 60px;
+    bottom: -40px;
+    box-shadow: 0 10px 20px 15px rgba(128, 128, 128, 0.086);
+
+}
+
+.image-description h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image-description h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.feedback-image::before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    background-color: #FDC800;
+    border-radius: 15px;
+    position: absolute;
+    top: -35px;
+    left: -30px;
+}
+
+.feedback-content {
+    width: 500px;
+    flex-grow: 1;
+}
+
+.feedback-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.feedback-content p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #212529;
+    margin-bottom: 3rem;
+}
+
+
+.feedback-content h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #002147;
+    margin-bottom: 1rem;
+}
+
+.taken-courses {
+    display: flex;
+    align-items: center;
+}
+
+.taken-courses-image {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.taken-courses-content {
+    background-color: #F0F4F9;
+    border-radius: 15px;
+    height: 100px;
+    width: 90%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.taken-courses-content h5 {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #002147;
+}
+
+.taken-courses-content h6 {
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #757575;
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .feedback .container {
+        height: 950px;
+        position: relative;
+    }
+
+    .feedback-content {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .feedback-image {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .feedback-image::before {
+        z-index: 1;
+        transform: translatex(50%);
+    }
+
+    .feedback-image .corner-image {
+        z-index: 2;
+    }
+
+    .feedback-image .image-description {
+        transform: translatex(65px);
+    }
+
+    .taken-courses-image {
+        transform: translateX(-80%);
+    }
+
+}
+
+@media (max-width:768px) {
+    .feedback .container {
+        height: 950px;
+        position: relative;
+    }
+
+    .feedback-content {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .feedback-image {
+        position: absolute;
+        top: 0;
+        left: -50px;
+        justify-self: center;
+    }
+
+    .feedback-image::before {
+        z-index: 1;
+        transform: translatex(50%);
+    }
+
+    .feedback-image .corner-image {
+        z-index: 2;
+    }
+
+    .feedback-image .image-description {
+        transform: translatex(65px);
+    }
+
+    .taken-courses-image {
+        transform: translateX(-80%);
+    }
+}

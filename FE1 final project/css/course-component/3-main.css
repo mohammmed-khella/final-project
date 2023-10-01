@@ -1,0 +1,45 @@
+main {
+    padding: 5rem 0;
+    background-color: #F0F4F9;
+
+}
+
+main h5 {
+    color: #FDC800;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+main h2 {
+    color: #002147;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.chooses {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    height: 200px;
+}
+
+.chooses label {
+    display: block;
+    color: #002147;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.chooses select {
+    padding: 10px;
+    width: 100%;
+}
+
+@media (max-width:992px) {
+    .chooses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
